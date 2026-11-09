@@ -1,0 +1,42 @@
+# Cas 1: Dossier non-retenu
+Acteurs : Professeur
+Préconditions :
+- Le candidat à déposer son dossier sur le logiciel avec toute les informations nécessaire
+- L'administration à enregistrer le dossier du candidat
+- Le prof à été assigné au dossier du candidat pour l'examiner
+
+Postconditions :
+- Le professeur examine le dossier puis le juge insuffisant
+- Le dossier n'est donc pas retenu
+- Un mail est envoyé au candidat lui informant que son dossier n'a pas pus être retenu
+
+# Cas 2: Entretien nécessaire
+Acteurs : Professeur, Candidat
+Préconditions :
+- Le candidat à déposer son dossier sur le logiciel avec toute les informations nécessaire
+- L'administration à enregistrer le dossier du candidat
+- Le prof à été assigné au dossier du candidat pour l'examiner
+
+Postconditions :
+- Le professeur examine le dossier puis décide de passer un entretien
+- Un entretien est donc organisé à une date précise
+- Si le candidate n'est pas présent à l'entretien
+	- son dossier n'est pas retenu
+- Sinon si le professeur juge suffisant le candidat
+	- il retient son dossier
+	- Un mail est envoyé au candidat lui informant que son dossier à été retenu et qu'il doit s'inscrire dans un certain délai pour être accepter.
+- Sinon si le professeur ne juge pas suffisant le candidat
+	- il ne retient pas son dossier
+	- Un mail est envoyé au candidat lui informant que son dossier n'a pas pus être retenu
+
+# Cas 3: Dossier retenu
+Acteurs : Professeur, Candidat
+Préconditions :
+- Le candidat à déposer son dossier sur le logiciel avec toute les informations nécessaire
+- L'administration à enregistrer le dossier du candidat
+- Le prof à été assigné au dossier du candidat pour l'examiner
+
+Postconditions :
+- Le professeur examine le dossier puis le juge suffisant
+- Le dossier est donc retenu
+- Un mail est envoyé au candidat lui informant que son dossier à été retenu et qu'il doit s'inscrire dans un certain délai pour être accepter.
